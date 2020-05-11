@@ -1,0 +1,282 @@
+/* ---------------------------------------------General--------------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header,main,footer,nav,aside,section,article,div {
+    display: block;
+}
+
+body {
+    background-image: url("../images/backGround.png");
+    background-repeat: repeat-x;
+    background-color:rgb(204, 204, 204)
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #34495e;
+    height: 98px;
+}
+
+#logo {
+    display: block;
+    position: relative;
+    top: 16px;
+    background: url("../images/face-with-medical-mask_1f637.png") no-repeat;
+    background-size: cover;
+    height: 59px;
+    width: 59px;
+    margin: 0 auto;
+}
+
+aside {
+    float: right;
+    background-color: #2ecc71;
+    width: 184px;
+    height: 836px;
+}
+
+main {
+    height: 836px;
+    width: 816px;
+    background-color: #16a085;
+    display: flex;
+    position: relative;
+}
+
+article {
+    background-color: rgb(221, 163, 157);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(199, 58, 204);
+    font-size: 30px;
+    transition-duration: 0.8s;
+}
+
+a:hover {
+    color: gold;
+}
+
+footer {
+    width: 100%;
+    height: 66px;
+    position: relative;
+    background-color: #f1c40f;
+    clear: both;
+}
+
+
+/* ---------------------------------------------Index--------------------------------------------- */
+#indexPage main article {
+    position: absolute;
+}
+
+.wide-box {
+    width: 413px;
+    height: 287px;
+    left: 353px;
+    top: 21px;
+}
+
+.narrow-box-left {
+    width: 180px;
+    height: 301px;
+    top: 88px;
+    left: 21px;
+}
+
+.narrow-box-right {
+    width: 180px;
+    height: 301px;
+    top: 450px;
+    right: 310px;
+}
+
+ul {
+    position: relative;
+    left: 35px;
+    top: 70px;
+}
+
+ul>li {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Bitter', serif;
+    margin-top: 30px;
+}
+
+/* ---------------------------------------------Layout_1--------------------------------------------- */
+#layout1Page aside {
+    float: left;
+}
+
+#pattern ul {
+    position: relative;
+    left: 184px;
+}
+
+#pattern li {
+    position: relative;
+    display: inline;
+    margin-right: 60px;
+}
+
+#pattern {
+    background-image: url(../images/pattern.png);
+    height: 185px;
+    width: 1000px;
+    position: absolute;
+    z-index: 99999;
+}
+
+.two-small-boxes {
+    display: flex;
+    position: absolute;
+    top: 290px;
+    left: 469px;
+}
+
+.two-small-boxes article {
+    width: 123px;
+    height: 87px;
+    margin-right: 40px;
+}
+
+.medium-rec {
+    position: absolute;
+    width: 268px;
+    height: 112px;
+    top: 598px;
+    left: 57px;
+}
+
+.large-rec {
+    position: absolute;
+    height: 288px;
+    width: 413px;
+    top: 422px;
+    left: 342px;
+}
+
+/* ---------------------------------------------Layout_2--------------------------------------------- */
+#layout2-pattern {
+    background-image: url(../images/pattern.png);
+    height: 162px;
+    width: 1000px;
+}
+
+#layout2-pattern ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#layout2-pattern li {
+    display: inline;
+    margin-right: 60px;
+}
+
+#layout2-main {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#layout2-main>article {
+    height: 314px;
+    width: 204px;
+    margin-left: 100px;
+    margin-top: 48px;
+    text-align: center;
+}
+
+#layout2-buttons {
+    position: relative;
+    float: left;
+    margin-top: 70px;
+}
+
+#layout2-buttons>button {
+    background-color: #e74c3c;
+    border-radius: 6px;
+    color: #ecf0f1;
+    border: none;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    transition-duration: 0.9s;
+}
+
+#layout2-buttons>button:hover {
+    background-color: #27ae60;
+}
+
+footer>p {
+    position: relative;
+    font-family: 'Bitter', serif;
+    float: right;
+    margin-top: 22px;
+    margin-right: 25px;
+}
+
+#layout1-footer {
+    position: fixed;
+    bottom: 0;
+}
+
+/* ---------------------------------------------@media [for Layout_2 only]--------------------------------------------- */
+@media (max-width: 577px) {
+    body {
+        background: none;
+    }
+
+    #layout2-pattern{
+        width: 100%;
+    }
+
+    #layout2-buttons, ul{
+        display: none;
+    }
+
+    #layout2-main {
+        background-color: #00cec9;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    
+    #menu {
+        background-image: url(../images/icons8-menu-64.png);
+        position: fixed;
+        left: 435px;
+        top: 275px;
+        width: 64px;
+        height: 64px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+
+    #layout2-main>article {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 34px;
+    }
+
+    #wrapper, #layout2-main {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
