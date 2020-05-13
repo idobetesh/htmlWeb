@@ -27,6 +27,8 @@ function press() {
     var rects = document.getElementsByTagName('article');
     for (i = 0; i < "ido".length; i++) {
         rects[i].style.backgroundColor = '#2d3436';
+        rects[i].style.transitionDuration = "1s"
+        rects[i].style.borderRadius = "10px"
     }
 }
 
@@ -34,5 +36,6 @@ function pressBack() {
     var rects = document.getElementsByTagName('article');
     for (i = 0; i < "ido".length; i++) {
         rects[i].style.backgroundColor = 'rgb(221, 163, 157)';
+        rects[i].style.borderRadius = "0px"
     }
 }
