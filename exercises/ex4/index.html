@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./includes/style.css">
+    <link rel="icon" href="./includes/newFavicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <title>Ido Betesh-Ex4</title>
+</head>
+
+<body class="bricks">
+    <header>
+        <a href="./index.html" id ="title">We Don't Need No Education &lt!&gt</a>
+    </header> 
+    <div id="wrapper">
+        <p class="itsaBoard">In case you forgot, this is what a board looks like...<br>Let us check if you lost your mind during the quarantine</p>
+        <div class="blackboard">   
+            <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="GET"> 
+                <div class="form"><br><br><br>
+                <p>
+                    <label>Full Name: </label>
+                    <input type="text" name="fullName" pattern="[A-Z]{1}[a-z]+\s{1}[A-Z]{1}[a-z]+" title="Full name should have first and last name separated by a SINGLE space, both first and last name start with an UPPERCASE e.g. (Israel + ' ' + Israeli) " placeholder="Israel Israeli" required>
+                </p>
+                <p>
+                    <label>Password: </label>
+                    <input type="password" name="pass" placeholder="Password" pattern=".{8,}" title="Eight or more characters" required>
+                </p>
+                <p>
+                    <label>Email: </label>
+                    <input type="email" name="mail" placeholder="stopCovid19@mail.com">
+                </p>
+                <p>
+                    <label>Most viewed website:</label>
+                    <input type="url" name="website" placeholder="please, NOT Moodle" title="e.g. http://myForm.com"><br>
+                </p>
+                <p>
+                    <label>Since you're quarantined, enter home Phone: </label>
+                    <input type="tel" name="phone" pattern="\d{9}" title="Home phone number should have nine digits" placeholder="123456789"> 
+                </p>
+                <p>
+                    <label>Times you opened the refrigerator [last hr]:</label>
+                    <input type="number" name="coffee" placeholder="Don't feel bad about it" min="1" required title="You have to fill this field! don't worry, we won't tell">
+                </p>
+                <p class="range">
+                    <label>How bad do you miss life: </label>
+                    0 <input type="range" name="temper" min="0" max="100" required> 100
+                </p><br>
+
+               <fieldset>
+                <p>
+                    <label>Skills you have improved during the quarantine:</label>
+                </p>
+                <p>
+                    <label>eating</label>
+                    <input type="checkbox" name="interests[]" value="Sleep" checked=true>
+                </p>
+                <p>
+                    <label>sleeping</label>
+                    <input type="checkbox" name="interests[]" value="Sleep">
+                </p>
+                <p>
+                    <label>eating some more.. </label>
+                    <input type="checkbox" name="interests[]" value="Sleep">
+                </p>
+                </fieldset>
+
+                <p><br>
+                    <label>Hours you sleep a day:
+                        <select name="age" required>
+                            <option selected="selected">We'll add 2 hours to everything you enter</option>
+                            <option value="4">4 You're lying!</option>
+                            <option value="5">5 You're lying!</option>
+                            <option value="6">6 You're lying!</option>
+                            <option value="7">7 You're lying!</option>
+                            <option value="8">8 You're lying!</option>
+                            <option value="9">9 No way</option>
+                            <option value="10">10 Stop lying!</option>
+                            <option value="11">11 Are you sure?!</option>
+                            <option value="12">12 We're getting there</option>
+                            <option value="13+">13+ That makes sense</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>You rather be in Spain or Italy?<br>
+                        <input type="radio" name="gender" value="Spain" checked = true>Spain<br>
+                        <input type="radio" name="gender" value="Italy">Italy
+                    </label>
+                </p>
+                <p>
+                    <label>The weirdest dream you had [Be gentle]: </label><br>
+                    <textarea rows="5" cols="20" name="address" placeholder='"I HAVE A DREAM.."'></textarea> 
+                </p>
+                <p class="wipeout"> 
+                    <input type="submit" value="Send & Stay safe 😷"><br>
+                </p>
+            </div> 
+        </form>
+        </div>
+    </div>
+    <iframe width="230" height="120" src="https://www.youtube.com/embed/zz8frWcmthA?controls=0;&autoplay=1;"></iframe>    
+    <footer><a href="http://shenkar.html5-book.co.il/2019-2020/web1/dev_13/index.html"><p>&copy;IDO BETESH</p></a></footer>
+</body>
+</html>
