@@ -21,11 +21,11 @@
                 <div class="form"><br><br><br>
                 <p>
                     <label>Full Name: </label>
-                    <input type="text" name="fullName" pattern="[A-Z]{1}[a-z]+\s{1}[A-Z]{1}[a-z]+" title="Full name should have first and last name separated by a SINGLE space, both first and last name start with an UPPERCASE e.g. (Israel + ' ' + Israeli) " placeholder="Israel Israeli" required>
+                    <input type="text" name="fullName" pattern="[a-zA-Z]+\s+[a-zA-Z]+" title="Full name should have first and last name separated by a SINGLE space e.g. (Israel + ' ' + Israeli) " placeholder="Israel israeli" required>
                 </p>
                 <p>
                     <label>Password: </label>
-                    <input type="password" name="pass" placeholder="Password" pattern=".{8,}" title="Eight or more characters" required>
+                    <input type="password" name="pass" placeholder="Password" pattern=".{8,}" title="Eight or more characters">
                 </p>
                 <p>
                     <label>Email: </label>
@@ -37,15 +37,15 @@
                 </p>
                 <p>
                     <label>Since you're quarantined, enter home Phone: </label>
-                    <input type="tel" name="phone" pattern="\d{9}" title="Home phone number should have nine digits" placeholder="123456789"> 
+                    <input type="tel" name="phone" pattern="\d{9}" title="Home phone number should have exactly nine [9] digits" placeholder="123456789"> 
                 </p>
                 <p>
                     <label>Times you opened the refrigerator [last hr]:</label>
-                    <input type="number" name="coffee" placeholder="Don't feel bad about it" min="1" required title="You have to fill this field! don't worry, we won't tell">
+                    <input type="number" name="coffee" placeholder="Don't feel bad about it" min="1"  required title="You have to fill this field! don't worry, we won't tell 😶">
                 </p>
                 <p class="range">
                     <label>How bad do you miss life: </label>
-                    0 <input type="range" name="temper" min="0" max="100" required> 100
+                    0 <input type="range" name="temper" min="0" max="100"> 100
                 </p><br>
 
                <fieldset>
@@ -54,7 +54,7 @@
                 </p>
                 <p>
                     <label>eating</label>
-                    <input type="checkbox" name="interests[]" value="Sleep" checked=true>
+                    <input type="checkbox" name="interests[]" value="Sleep">
                 </p>
                 <p>
                     <label>sleeping</label>
@@ -70,16 +70,16 @@
                     <label>Hours you sleep a day:
                         <select name="age" required>
                             <option selected="selected">We'll add 2 hours to everything you enter</option>
-                            <option value="4">4 You're lying!</option>
-                            <option value="5">5 You're lying!</option>
-                            <option value="6">6 You're lying!</option>
-                            <option value="7">7 You're lying!</option>
-                            <option value="8">8 You're lying!</option>
-                            <option value="9">9 No way</option>
-                            <option value="10">10 Stop lying!</option>
-                            <option value="11">11 Are you sure?!</option>
-                            <option value="12">12 We're getting there</option>
-                            <option value="13+">13+ That makes sense</option>
+                            <option value="4">4 You're lying!👺</option>
+                            <option value="5">5 You're lying!👺</option>
+                            <option value="6">6 You're lying!👺</option>
+                            <option value="7">7 You're lying!👺</option>
+                            <option value="8">8 You're lying!👺</option>
+                            <option value="9">9 No way👺</option>
+                            <option value="10">10 Stop lying!👺</option>
+                            <option value="11">11 Are you sure?!😒</option>
+                            <option value="12">12 We're getting there😛</option>
+                            <option value="13+">13+ That makes sense😝</option>
                         </select>
                     </label>
                 </p>
@@ -94,7 +94,7 @@
                     <textarea rows="5" cols="20" name="address" placeholder='"I HAVE A DREAM.."'></textarea> 
                 </p>
                 <p class="wipeout"> 
-                    <input type="submit" value="Send & Stay safe 😷"><br>
+                    <input type="submit" onclick="return validBox()" value="Send & Stay safe 😷"><br>
                 </p>
             </div> 
         </form>
@@ -102,5 +102,23 @@
     </div>
     <iframe width="230" height="120" src="https://www.youtube.com/embed/zz8frWcmthA?controls=0;&autoplay=1;"></iframe>    
     <footer><a href="http://shenkar.html5-book.co.il/2019-2020/web1/dev_13/index.html"><p>&copy;IDO BETESH</p></a></footer>
+    <script>
+        function check_b() {
+            var box = document.getElementsByTagName("input"); 
+            for (i = 0; i < box.length; i++) {
+                if (box[i].type == "checkbox")
+                    if (box[i].checked) 
+                        return true;
+            }
+            return false;
+        }
+        function validBox() {
+            if (!check_b()) {
+                alert("You have to check at least one skill..you must have improved some of them 😂");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 </html>
