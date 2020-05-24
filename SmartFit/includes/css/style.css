@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url("../../images/bg-min.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+a:hover h4 {
+    font-weight: bolder;
+}
+
+button {
+    color: #D45812 !important;
+    font-size: 15px;
+    background-color: #04323F !important;
+}
+
+button:hover {
+    font-weight: bolder;
+}
+
+
+#mainContainer {
+    margin-bottom: 50px;
+}
+
+
+.jumbotron {
+    background-color: #04323F !important;
+    margin-bottom: 0;
+}
+
+.jumbotron a {
+    display: block;
+    background: url("../../images/logo.png") no-repeat;
+    width: 201.2px;
+    height: 85px;
+}
+
+.navbar {
+    background-color: rgb(10, 81, 100) !important;
+}
+
+footer {
+    bottom: 0;
+    background-color: #04323F;
+    color: #D45812;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 20px;
+    background: none !important;
+}
+
+.workoutBtn {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*-------------------Icon----------------------------------*/
+#iconTrainer {
+    background: url("../../images/iconTrainer.png") no-repeat;
+    display: block;
+    height: 60px;
+    color: black !important;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 65px;
+}
+
+#iconTrainee {
+    background: url("../../images/iconTrainee.png") no-repeat;
+    display: block;
+    height: 60px;
+    width: 60px;
+}
+
+/*---------------------------Header Trainee----------------------*/
+.row {
+    flex-grow: 1;
+}
+
+#headerTrainee {
+    padding-top: 10px;
+    color: #D45812;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Headland One', serif;
+}
+
+/*--------------------form---------------------------------*/
+form label {
+    font-weight: bold;
+}
+
+#formCon {
+    padding-top: 10px;
+}
+
+#topRow {
+    margin-bottom: 10px;
+}
+
+#topRow div {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+.addNewEx {
+    margin-right: 8px;
+}
+
+/*---------------------smartFit motivation-----------------*/
+#smartfitHeader {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 55px;
+}
+
+/*--------------------------Map--------------------------*/
+
+#map {
+    background: url("../../images/map.png");
+    display: block;
+    width: 230px;
+    height: 280px;
+    text-decoration: none;
+}
+
+/*--------------------Workouts cards------*/
+
+.workoutList {
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.workoutList a {
+    text-decoration: none;
+    color: black;
+}
+
+/*---------------- workout Details---------------*/
+.allBox {
+    border: 1px solid black;
+    border-radius: 6px;
+    background: rgb(4, 50, 63, 0.4) !important;
+}
+
+
+.allBox h4,
+h3,
+h2 {
+    color: #D45812;
+
+}
+
+.allBox.cardWO h3 {
+    color: #D45812;
+}
+
+.headerRow {
+    margin-top: 20px;
+}
+
+.headerRow h4 {
+    color: #D45812;
+}
+
+.cardEx {
+    justify-content: space-around;
+}
+
+.cardWO {
+    width: 182px;
+    height: 210px;
+    margin: 50px;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+/*--------- Media query-------*/
+@media (max-width:577px) {
+    #duplicator {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #map {
+        margin-top: 20px;
+    }
+
+    .cardWO {
+        margin: 10px;
+        width: 80%;
+    }
+}
