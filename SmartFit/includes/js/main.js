@@ -41,8 +41,6 @@ if (x == 1) {
     $("#General").append(txt2);
     $("#Difficulty").append(txt3);
 
-
-
     var card1 = '<div class="cardWO allBox text-center"></div>'
     for (var i = 0; i < 6; i++)
       $(".cardEx").append(card1);
